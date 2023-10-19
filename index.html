@@ -22,16 +22,14 @@
                 <form action="login.php" method="post">
                     <div class="campo">
                         <span class="material-symbols-outlined">person</span>
-                        <input type="email" name="email" id="iemail" required placeholder="seu e-mail">
+                        <input type="email" name="email" id="iemail" required placeholder="seu e-mail" maxlength="30">
                     </div> 
                     <div class="campo">
                         <span class="material-symbols-outlined">vpn_key</span>
-                        <input type="password" name="senha" id="isenha" required placeholder="sua senha">
+                        <input type="password" name="senha" id="isenha" required placeholder="sua senha" minlength="8" maxlength="20">
                     </div>
-                    <input id="btn" type="submit" value="Entrar">
-                    <div id="esq-sen">
-                        <a href="#">Esqueci a senha <span class="material-symbols-outlined">mail</span></a>
-                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="#" id="btn">Esqueci a senha <span class="material-symbols-outlined">mail</span></a>
                 </form>
             </div>
         </section>
