@@ -34,6 +34,8 @@ section#login {
     background-color: white;
     width: 250px;
     height: 515px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.415);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -44,6 +46,7 @@ div#imagem {
     background: url(../imagens/metal.jpg) no-repeat left bottom;
     background-size: cover;
     height: 200px;
+    border-radius: 20px 20px 0px 0px;
 }
 
 div#formulario {
@@ -63,7 +66,6 @@ div#formulario > p {
     background-color: #5f2c82;
     border-radius: 8px;
     margin: 5px 0px;
-    padding: 2px;
     position: relative;
 }
 
@@ -75,18 +77,55 @@ div#formulario > p {
 }
 
 .campo > input {
+    background-color: #8dd8d6;
     font-size: 1em;
     padding: 4px;
     border-radius: 8px;
     border: 0;
     position: absolute;
+    right: 0;
+    top: 0;
     height: 95%;
+    width: 80%;
+    transform: translate(-0.5%,3%);
+}
+
+.campo > input:focus {
+    background-color: white;
+    border: none;
 }
 
 div#formulario > form > input[type="submit"] {
     width: 100%;
     border-radius: 8px;
     border: 1px solid #49a09d;
-    padding: 10px;
+    padding: 8px;
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: white;
+    background-color: #49a09d;
+}
+
+div#formulario > form > input[type="submit"]:hover {
+    background-color: #346d6b;
+    cursor: pointer;
+}
+
+a#btn {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #49a09d;
+    border-radius: 8px;
+    padding: 8px;
+    color: #2c5d5b;
+}
+
+a#btn > span {
+    font-size: 1em;
+}
+
+a#btn:hover {
+    background-color: #59c3bf;
 }
 
