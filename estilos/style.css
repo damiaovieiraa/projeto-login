@@ -30,7 +30,7 @@ main {
 section#login {
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 515px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.450);
@@ -65,32 +65,40 @@ div#formulario > p {
     font-size: 0.8em;
 }
 
-.campo {
+form > div.campo {
+    display: block;
     background-color: #5f2c82;
+    border: 2px solid #5f2c82;
+    width: 100%;
+    height: 40px;
     border-radius: 8px;
     margin: 5px 0px;
     position: relative;
 }
 
+form div.campo > label {
+    display: none;
+}
+
 .campo > span {
-    font-size: 1.9em;
     color: white;
-    padding: 5px;
+    /*background-color: black;*/
+    font-size: 2em;
     width: 40px;
+    padding: 5px;
+    position: relative;
+    transform: translateY(-3px);    
 }
 
 .campo > input {
-    background-color: #8dd8d6;
+    background-color: #94cfcd;
     font-size: 1em;
-    padding: 4px;
-    border-radius: 8px;
-    border: 0;
     position: absolute;
-    right: 0;
-    top: 0;
-    height: 95%;
-    width: 80%;
-    transform: translate(-0.5%,3%);
+    width: calc(100% - 40px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
 }
 
 .campo > input:focus {
@@ -99,33 +107,38 @@ div#formulario > p {
 }
 
 div#formulario > form > input[type="submit"] {
-    width: 100%;
-    border-radius: 8px;
-    border: 1px solid #49a09d;
-    padding: 8px;
-    margin-bottom: 5px;
+    display: block;
     font-size: 1em;
-    color: white;
+    width: 100%;
+    height: 40px;
     background-color: #49a09d;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 5px;  
 }
 
 div#formulario > form > input[type="submit"]:hover {
-    background-color: #346d6b;
+    background-color: #295554;
     cursor: pointer;
 }
 
-a#btn {
+form > a#btn {
     display: block;
     text-decoration: none;
     text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    color: #295554;
     border: 1px solid #49a09d;
-    border-radius: 8px;
-    padding: 8px;
-    color: #2c5d5b;
+    border-radius: 5px;
+    padding-top: 7px;
 }
 
-a#btn > span {
-    font-size: 1em;
+form > a#btn > span {
+    font-size: 0.8em;
 }
 
 a#btn:hover {
