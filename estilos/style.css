@@ -16,12 +16,9 @@ Lilás: #5f2c82
 }
 
 html, body {
+    background-color: #5f2c82;
     width: 100vw;
     height: 100vh;
-}
-
-body {
-    background-color: #5f2c82;
 }
 
 main {
@@ -33,23 +30,29 @@ main {
 section#login {
     background-color: white;
     width: 250px;
-    height: 515px;
+    height: 500px;
     border-radius: 20px;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.415);
+    overflow: hidden;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.450);
+
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 div#imagem {
+    display: block;
     background: url(../imagens/metal.jpg) no-repeat left bottom;
     background-size: cover;
     height: 200px;
-    border-radius: 20px 20px 0px 0px;
 }
 
 div#formulario {
+    display: block;
     padding: 10px;
 }
 

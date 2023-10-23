@@ -6,18 +6,17 @@
     }
 
     section#login {
-        height: 280px;
         width: 80vw;
+        height: 280px;
     }
 
-    div#imagem {
+    section#login > div#imagem {
         float: left;
         width: 30%;
-        height: 280px;
-        border-radius: 20px 0px 0px 20px;
+        height: 100%;
     }
     
-    div#formulario {
+    section#login >div#formulario {
         float: right;
         width: 70%;
     }
@@ -37,14 +36,13 @@
         height: 350px;
     }
 
-    div#imagem {
+    section#login > div#imagem {
         float: right;
         width: 50%;
-        height: 350px;
-        border-radius: 0px 20px 20px 0px;
+        height: 100%;
     }
 
-    div#formulario {
+    section#login > div#formulario {
         float: left;
         width: 50%;
     }
