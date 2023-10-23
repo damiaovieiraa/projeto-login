@@ -99,11 +99,12 @@ form div.campo > label {
     width: calc(100% - 40px);
     height: 100%;
     border: 0px;
+    outline: none;
     border-radius: 8px;
     padding: 4px;
 }
 
-.campo > input:focus {
+.campo > input:focus-within {
     background-color: white;
     border: none;
 }
